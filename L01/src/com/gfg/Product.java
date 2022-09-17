@@ -1,2 +1,4 @@
-package com.gfg;public class Product {
+package com.gfg;
+
+public class Product {
 }

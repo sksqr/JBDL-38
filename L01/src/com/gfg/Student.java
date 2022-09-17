@@ -1,2 +1,4 @@
-package com.gfg;public class Student {
+package com.gfg;
+
+public class Student extends Person{
 }
