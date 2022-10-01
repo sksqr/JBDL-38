@@ -8,6 +8,7 @@ public class Demo {
         MyThread myThread = new MyThread();
 //        myThread.setName("Child Thread");
         myThread.start();
+//        myThread.run(); No new thread
 
         myThread.join();
         System.out.println("Waiting");
@@ -19,10 +20,8 @@ public class Demo {
         myThread1.join();
         System.out.println("End of main method");
 
-
         Thread thread = new Thread(new MyWork());
         thread.start();
-
 
     }
 
