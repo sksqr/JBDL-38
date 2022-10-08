@@ -1,11 +1,17 @@
-package org.jbdl38;
+package org.gfg;
 
-public class KeywordClientDemo {
+import com.google.gson.Gson;
+import org.jbdl38.KeywordAnalyser;
+import org.jbdl38.KeywordCount;
+import org.jbdl38.KeywordCountAnalyser;
+import org.jbdl38.NewKeywordAnalyser;
 
+public class Main {
     public static void main(String[] args) {
-//        KeywordAnalyser keywordAnalyser = new KeywordAnalyserImpl();
-//        KeywordAnalyser keywordAnalyser = new UniqueKeywordAnalyser();
+
+
         KeywordAnalyser keywordAnalyser = new KeywordCountAnalyser();
+//        KeywordAnalyser keywordAnalyser = new NewKeywordAnalyser();
 
         keywordAnalyser.recordKeyword("phone");
         keywordAnalyser.recordKeyword("laptop");
@@ -18,10 +24,10 @@ public class KeywordClientDemo {
         }
 
 
+        Gson gson = new Gson();
         for(KeywordCount keywordCount : keywordAnalyser.getKeywordsWithCount()){
-            System.out.println(keywordCount);
+            System.out.println(gson.toJson(keywordCount));
         }
-
 
 
     }

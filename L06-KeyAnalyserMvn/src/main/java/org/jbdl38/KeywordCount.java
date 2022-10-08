@@ -1,4 +1,4 @@
-package com.collections;
+package org.jbdl38;
 
 public class KeywordCount {
 

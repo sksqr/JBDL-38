@@ -1,0 +1,32 @@
+XML:
+<address>
+<houseNo>2</houseNo>
+<street>MG road</street>
+<city>Delhi</city>
+</address>
+
+
+JSON:
+{
+"houseNo":2,
+"street":"MG road",
+"city":"Delhi"
+}
+
+
+protobuf
+GRPC
+Contract:
+line1: houseNo
+line2: street
+line3: city
+
+
+
+2
+MG road
+Delhi
+
+
+
+

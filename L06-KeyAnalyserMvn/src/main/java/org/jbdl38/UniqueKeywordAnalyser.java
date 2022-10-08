@@ -1,6 +1,9 @@
-package com.collections;
+package org.jbdl38;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.LinkedHashSet;
+import java.util.List;
+import java.util.Set;
 
 public class UniqueKeywordAnalyser implements KeywordAnalyser{
 

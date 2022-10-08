@@ -1,4 +1,4 @@
-package com.collections;
+package org.jbdl38;
 
 import java.util.ArrayList;
 import java.util.List;
