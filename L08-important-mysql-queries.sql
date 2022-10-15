@@ -1,4 +1,17 @@
-mysql -ugfg -pjbdl1234
+mysql -uapp1 -pJbdl@1234
+
+CREATE USER 'user1'@'localhost' IDENTIFIED BY 'Pass@123';
+SHOW GRANTS FOR 'user1'@'localhost';
+
+GRANT CREATE, ALTER, DROP, INSERT, UPDATE, DELETE, SELECT, REFERENCES, RELOAD on *.* TO 'user1'@'localhost' WITH GRANT OPTION;
+
+GRANT ALL PRIVILEGES ON *.* TO 'user1'@'localhost' WITH GRANT OPTION;
+
+SHOW PROCESSLIST;
+
+show status like '%onn%';
+
+
 
 create database demo_system
 
@@ -7,6 +20,8 @@ use demo_system;
 show tables;
 
 create table person(    id INT NOT NULL AUTO_INCREMENT,    name VARCHAR(50) NOT NULL,    email VARCHAR(50) NOT NULL,    phone VARCHAR(50),    PRIMARY KEY ( id ) );
+
+create table product (id INT NOT NULL AUTO_INCREMENT, name VARCHAR(50) NOT NULL, price DOUBLE NOT NULL, PRIMARY KEY ( id ) );
 
 show create table person;
 
